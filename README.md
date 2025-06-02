@@ -2,7 +2,7 @@
 
 A Kubernetes manager that provides ingress-like functionality using localhost.run tunneling service. While not a traditional ingress controller, it acts as an ingress by automatically creating SSH reverse tunnels to expose your Kubernetes services to the internet through localhost.run.
 
-🚀 Features
+## 🚀 Features
 
 - **Automatic Tunnel Management**: Monitors ingresses and creates SSH tunnels automatically
 - **Health Monitoring**: Continuously checks tunnel health and recreates dead tunnels
@@ -10,7 +10,7 @@ A Kubernetes manager that provides ingress-like functionality using localhost.ru
 - **Zero Configuration**: Works out of the box with localhost.run's no-key access
 - **Resilient**: Handles tunnel failures gracefully with automatic recovery
 
-🏗️ How It Works
+## 🏗️ How It Works
 
 This solution acts as a pseudo-ingress controller that:
 
@@ -59,6 +59,14 @@ helloworld     localhostrun   xxxxxxxxxxxxxx.lhr.life                     80    
 ```
 
 > **NOTE:** The service type must be `NodePort` to expose it using LocalhostRun Ingress.
+
+## 📝 Changelog
+
+### Version 1
+- Initial release (inception)
+
+### Version 2
+- Fixed updating ingress hosts when tunnels restart with new domains
 
 ## Credits:
 
