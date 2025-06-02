@@ -60,7 +60,7 @@ helloworld     localhostrun   xxxxxxxxxxxxxx.lhr.life                     80    
 
 > **NOTE:** The service type must be `NodePort` to expose it using LocalhostRun Ingress.
 
-## 📝 Changelog
+## 📝 Docker Image Changelog
 
 ### Version 1
 - Initial release (inception)
