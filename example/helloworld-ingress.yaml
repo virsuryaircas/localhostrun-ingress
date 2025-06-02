@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: helloworld
+spec:
+  ingressClassName: localhostrun
+  rules:
+  - host: ""  # Will be patched by localhostrun manager with actual subdomain URL
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: helloworld
+            port:
+              number: 80
