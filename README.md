@@ -52,9 +52,9 @@ kubectl apply -f helloworld-ingress.yaml
 # Verify the ingress
 kubectl get ingress
 
-#Output
+#Output just wait for 30seconds
 NAME           CLASS          HOSTS                     ADDRESS           PORTS   AGE
-helloworld     localhostrun   xxxxxxxxxxxxxx.lhr.life                     80      10s
+helloworld     localhostrun   xxxxxxxxxxxxxx.lhr.life                     80      30s
 
 ```
 
