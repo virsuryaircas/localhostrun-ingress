@@ -22,7 +22,7 @@ This solution acts as a pseudo-ingress controller that:
 
 Note: This is not a traditional ingress controller but provides similar functionality through tunneling.
 
-## Setup Instructions
+## ⚙️ Setup Instructions
 
 ```bash
 # Clone the repository
