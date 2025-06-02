@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: localhostrun-manager
+  namespace: lhr-ingress
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: localhostrun-manager
+  template:
+    metadata:
+      labels:
+        app: localhostrun-manager
+    spec:
+      hostNetwork: true
+      serviceAccountName: localhostrun-controller
+      terminationGracePeriodSeconds: 30
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        runAsGroup: 1000
+      containers:
+      - name: localhostrun-manager
+        image: virsuryaircas/localhostrun-ingress:v2
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: false
+          runAsNonRoot: true
