@@ -29,7 +29,7 @@ Note: This is not a traditional ingress controller but provides similar function
 git clone https://github.com/virsuryaircas/localhostrun-ingress.git
 
 # Navigate to the project directory
-cd lhr-ingress
+cd localhostrun-ingress
 
 # Create the 'lhr-ingress' namespace
 kubectl create ns lhr-ingress
