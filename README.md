@@ -26,7 +26,7 @@ Note: This is not a traditional ingress controller but provides similar function
 
 This project is primarily designed for **development purposes**, especially in scenarios like:
 
-- **Private Kubernetes clusters**: Easily expose internal services to the outside world with zero configuration using [localhost.run](https://localhost.run).
+- **Private Kubernetes clusters**: Easily expose internal services to the outside world with zero configuration.
 - **Quick testing and demos**: Share working URLs instantly without setting up DNS or ingress controllers.
 
 No public IP? No problem — this tool tunnels your services securely and efficiently.
