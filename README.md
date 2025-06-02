@@ -81,7 +81,7 @@ helloworld     localhostrun   xxxxxxxxxxxxxx.lhr.life                     80    
 ### Version 2
 - Fixed updating ingress hosts when tunnels restart with new domains
 
-## Credits:
+## 🤝 Credits:
 
 Special thanks to [localhost.run](https://localhost.run) and their [GitHub repository](https://github.com/localhost-run)  
 for providing subdomain tunneling services that power this project.
