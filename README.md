@@ -56,9 +56,11 @@ kubectl get ingress
 NAME           CLASS          HOSTS                     ADDRESS           PORTS   AGE
 helloworld     localhostrun   xxxxxxxxxxxxxx.lhr.life                     80      10s
 
+```
+
 > **NOTE:** The service type must be `NodePort` to expose it using LocalhostRun Ingress.
 
 ## Credits:
 
-Special thanks to [localhost.run](https://localhost.run/) and their [GitHub repository](https://github.com/localhost-run)  
+Special thanks to [localhost.run](https://localhost.run) and their [GitHub repository](https://github.com/localhost-run)  
 for providing subdomain tunneling services that power this project.
