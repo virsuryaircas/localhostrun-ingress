@@ -22,6 +22,15 @@ This solution acts as a pseudo-ingress controller that:
 
 Note: This is not a traditional ingress controller but provides similar functionality through tunneling.
 
+## 🌍 Use Case
+
+This project is primarily designed for **development purposes**, especially in scenarios like:
+
+- **Private Kubernetes clusters**: Easily expose internal services to the outside world with zero configuration using [localhost.run](https://localhost.run).
+- **Quick testing and demos**: Share working URLs instantly without setting up DNS or ingress controllers.
+
+No public IP? No problem — this tool tunnels your services securely and efficiently.
+
 ## ⚙️ Setup Instructions
 
 ```bash
@@ -59,6 +68,8 @@ helloworld     localhostrun   xxxxxxxxxxxxxx.lhr.life                     80    
 ```
 
 > **NOTE:** The service type must be `NodePort` to expose it using LocalhostRun Ingress.
+
+[![asciicast](https://asciinema.org/a/721752.svg)](https://asciinema.org/a/721752)
 
 ## 📝 Docker Image Changelog
 
