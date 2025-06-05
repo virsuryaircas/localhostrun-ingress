@@ -7,7 +7,7 @@ A Kubernetes manager that provides ingress-like functionality using localhost.ru
 This project is primarily designed for **development purposes**, especially in scenarios like:
 
 - **Private Kubernetes clusters**: Easily expose internal services to the outside world with zero configuration.
-- **Quick testing and demos**: Share working URLs instantly without setting up DNS or ingress controllers.
+- **Quick testing and demos**: Share working URLs instantly without setting up DNS entry.
 
 No public IP? No problem — this tool tunnels your services securely and efficiently.
 
