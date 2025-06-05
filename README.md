@@ -1,6 +1,6 @@
 # Ingress for Localhost in K8s - No Public IP
 
-The localhostrun manager that provides ingress-like functionality using localhost.run tunneling service. While not a traditional ingress controller, it acts as an ingress by automatically creating SSH reverse tunnels to expose your Kubernetes services to the internet.
+The localhostrun manager provides ingress-like functionality using localhost.run tunneling service. While not a traditional ingress controller, it acts as an ingress by automatically creating SSH reverse tunnels to expose your Kubernetes services to the internet.
 
 ## 🌍 Use Case
 
