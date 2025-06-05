@@ -2,6 +2,15 @@
 
 A Kubernetes manager that provides ingress-like functionality using localhost.run tunneling service. While not a traditional ingress controller, it acts as an ingress by automatically creating SSH reverse tunnels to expose your Kubernetes services to the internet through localhost.run.
 
+## 🌍 Use Case
+
+This project is primarily designed for **development purposes**, especially in scenarios like:
+
+- **Private Kubernetes clusters**: Easily expose internal services to the outside world with zero configuration.
+- **Quick testing and demos**: Share working URLs instantly without setting up DNS or ingress controllers.
+
+No public IP? No problem — this tool tunnels your services securely and efficiently.
+
 ## 🚀 Features
 
 - **Automatic Tunnel Management**: Monitors ingresses and creates SSH tunnels automatically
@@ -21,15 +30,6 @@ This solution acts as a pseudo-ingress controller that:
 - Monitors tunnel health and recreates as needed
 
 Note: This is not a traditional ingress controller but provides similar functionality through tunneling.
-
-## 🌍 Use Case
-
-This project is primarily designed for **development purposes**, especially in scenarios like:
-
-- **Private Kubernetes clusters**: Easily expose internal services to the outside world with zero configuration.
-- **Quick testing and demos**: Share working URLs instantly without setting up DNS or ingress controllers.
-
-No public IP? No problem — this tool tunnels your services securely and efficiently.
 
 ## ⚙️ Setup Instructions
 
