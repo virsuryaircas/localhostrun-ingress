@@ -22,8 +22,13 @@ spec:
         runAsGroup: 1000
       containers:
       - name: localhostrun-manager
-        image: virsuryaircas/localhostrun-ingress:v2
+        image: virsuryaircas/localhostrun-ingress:v3
         securityContext:
           allowPrivilegeEscalation: false
           readOnlyRootFilesystem: false
           runAsNonRoot: true
+        env:
+        - name: NODE_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.hostIP
